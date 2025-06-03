@@ -1,8 +1,19 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Star, Users, Trophy, Rocket, Target, Brain, Zap, ArrowRight, Quote } from "lucide-react"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  CheckCircle,
+  Star,
+  Users,
+  Trophy,
+  Rocket,
+  Target,
+  Brain,
+  Zap,
+  ArrowRight,
+  Quote,
+} from "lucide-react";
 
 export default function PMMSchoolLanding() {
   return (
@@ -11,10 +22,16 @@ export default function PMMSchoolLanding() {
       <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 text-sm font-medium">
-            <span className="bg-white/20 px-2 py-1 rounded text-xs font-bold">LIMITED TIME</span>
+            <span className="bg-white/20 px-2 py-1 rounded text-xs font-bold">
+              LIMITED TIME
+            </span>
             Apply code "MARKETREADY" to get $100 off at checkout
           </div>
-          <Button variant="secondary" size="sm" className="bg-white text-purple-600 hover:bg-gray-100">
+          <Button
+            variant="secondary"
+            size="sm"
+            className="bg-white text-purple-600 hover:bg-gray-100"
+          >
             Start My PMM Journey
           </Button>
         </div>
@@ -26,13 +43,22 @@ export default function PMMSchoolLanding() {
           <div className="flex justify-between items-center h-16">
             <div className="font-bold text-xl text-gray-900">PMM School</div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#curriculum" className="text-gray-600 hover:text-gray-900">
+              <a
+                href="#curriculum"
+                className="text-gray-600 hover:text-gray-900"
+              >
                 Curriculum
               </a>
-              <a href="#testimonials" className="text-gray-600 hover:text-gray-900">
+              <a
+                href="#testimonials"
+                className="text-gray-600 hover:text-gray-900"
+              >
                 Success Stories
               </a>
-              <a href="#pricing" className="text-gray-600 hover:text-gray-900">
+              <a
+                href="#pricing"
+                className="text-gray-600 hover:text-gray-900"
+              >
                 Pricing
               </a>
             </div>
@@ -57,21 +83,29 @@ export default function PMMSchoolLanding() {
                     PMM career
                   </span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">Get the complete toolkit:</p>
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Get the complete toolkit:
+                </p>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span className="text-gray-700">💪 Master product marketing from A to Z</span>
+                  <span className="text-gray-700">
+                    💪 Master product marketing from A to Z
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span className="text-gray-700">🎯 Ace your PMM interviews with confidence</span>
+                  <span className="text-gray-700">
+                    🎯 Ace your PMM interviews with confidence
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span className="text-gray-700">🚀 Make an impact and accelerate your career</span>
+                  <span className="text-gray-700">
+                    🚀 Make an impact and accelerate your career
+                  </span>
                 </div>
               </div>
 
@@ -98,9 +132,14 @@ export default function PMMSchoolLanding() {
                 </div>
                 <div className="flex items-center gap-1">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={i}
+                      className="h-4 w-4 fill-yellow-400 text-yellow-400"
+                    />
                   ))}
-                  <span className="text-sm text-gray-600 ml-1">4.9/5 rating</span>
+                  <span className="text-sm text-gray-600 ml-1">
+                    4.9/5 rating
+                  </span>
                 </div>
               </div>
             </div>
@@ -126,18 +165,23 @@ export default function PMMSchoolLanding() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Feeling stuck in your PMM journey?</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Feeling stuck in your PMM journey?
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
             <Card className="p-8 border-red-200 bg-red-50">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Does this sound like you?</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Does this sound like you?
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-6 h-6 rounded-full bg-red-500 flex items-center justify-center mt-0.5">
@@ -145,7 +189,8 @@ export default function PMMSchoolLanding() {
                     </div>
                     <div>
                       <p className="text-gray-700">
-                        You want to break into PMM but don't know <strong>where to start</strong>
+                        You want to break into PMM but don't know{" "}
+                        <strong>where to start</strong>
                       </p>
                     </div>
                   </div>
@@ -155,7 +200,8 @@ export default function PMMSchoolLanding() {
                     </div>
                     <div>
                       <p className="text-gray-700">
-                        You're overwhelmed by all the <strong>conflicting advice online</strong>
+                        You're overwhelmed by all the{" "}
+                        <strong>conflicting advice online</strong>
                       </p>
                     </div>
                   </div>
@@ -165,7 +211,8 @@ export default function PMMSchoolLanding() {
                     </div>
                     <div>
                       <p className="text-gray-700">
-                        You're stuck in <strong>analysis paralysis</strong>, unsure of your next step
+                        You're stuck in <strong>analysis paralysis</strong>,
+                        unsure of your next step
                       </p>
                     </div>
                   </div>
@@ -175,13 +222,16 @@ export default function PMMSchoolLanding() {
 
             <Card className="p-8 border-green-200 bg-green-50">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">There's a better way:</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  There's a better way:
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-6 w-6 text-green-500 mt-0.5" />
                     <div>
                       <p className="text-gray-700">
-                        Get <strong>clarity</strong> on the exact steps to land a PMM role
+                        Get <strong>clarity</strong> on the exact steps to land
+                        a PMM role
                       </p>
                     </div>
                   </div>
@@ -189,7 +239,8 @@ export default function PMMSchoolLanding() {
                     <CheckCircle className="h-6 w-6 text-green-500 mt-0.5" />
                     <div>
                       <p className="text-gray-700">
-                        Learn the right PMM skills that <strong>hiring managers</strong> look for
+                        Learn the right PMM skills that{" "}
+                        <strong>hiring managers</strong> look for
                       </p>
                     </div>
                   </div>
@@ -197,7 +248,8 @@ export default function PMMSchoolLanding() {
                     <CheckCircle className="h-6 w-6 text-green-500 mt-0.5" />
                     <div>
                       <p className="text-gray-700">
-                        <strong>Take action</strong> with a proven roadmap designed to help you break in
+                        <strong>Take action</strong> with a proven roadmap
+                        designed to help you break in
                       </p>
                     </div>
                   </div>
@@ -209,14 +261,18 @@ export default function PMMSchoolLanding() {
       </section>
 
       {/* What You'll Learn */}
-      <section id="curriculum" className="py-20 bg-white">
+      <section
+        id="curriculum"
+        className="py-20 bg-white"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Master the complete PMM toolkit (What You'll Learn)
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Everything you need to become a world-class product marketer, from strategy to execution.
+              Everything you need to become a world-class product marketer, from
+              strategy to execution.
             </p>
           </div>
 
@@ -265,12 +321,17 @@ export default function PMMSchoolLanding() {
                 image: "/placeholder.svg?height=200&width=400",
               },
             ].map((item, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow overflow-hidden">
+              <Card
+                key={index}
+                className="p-6 hover:shadow-lg transition-shadow overflow-hidden"
+              >
                 <CardContent className="p-0">
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center mb-4">
                     <item.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {item.title}
+                  </h3>
                   <p className="text-gray-600 mb-4">{item.description}</p>
                   <div className="mt-auto">
                     <Image
@@ -289,13 +350,18 @@ export default function PMMSchoolLanding() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="py-20 bg-white">
+      <section
+        id="pricing"
+        className="py-20 bg-white"
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               Learn practical and actionable product marketing:
             </h2>
-            <p className="text-xl text-gray-600">One-time payment, lifetime access to everything you need</p>
+            <p className="text-xl text-gray-600">
+              One-time payment, lifetime access to everything you need
+            </p>
           </div>
 
           <Card className="p-8 border-2 border-purple-200 relative overflow-hidden">
@@ -304,12 +370,18 @@ export default function PMMSchoolLanding() {
             </div>
             <CardContent className="p-0">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Complete PMM Mastery</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Complete PMM Mastery
+                </h3>
                 <div className="flex items-center justify-center gap-2 mb-4">
                   <span className="text-4xl font-bold text-gray-900">$499</span>
-                  <span className="text-lg text-gray-500 line-through">$1995</span>
+                  <span className="text-lg text-gray-500 line-through">
+                    $1995
+                  </span>
                 </div>
-                <p className="text-gray-600">One-time payment • Lifetime access</p>
+                <p className="text-gray-600">
+                  One-time payment • Lifetime access
+                </p>
               </div>
 
               <div className="space-y-3 mb-8">
@@ -319,7 +391,10 @@ export default function PMMSchoolLanding() {
                   "LinkedIn certification",
                   "Exclusive bonus content",
                 ].map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3">
+                  <div
+                    key={index}
+                    className="flex items-center gap-3"
+                  >
                     <CheckCircle className="h-5 w-5 text-green-500" />
                     <span className="text-gray-700">{feature}</span>
                   </div>
@@ -331,14 +406,19 @@ export default function PMMSchoolLanding() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
 
-              <p className="text-center text-sm text-gray-500 mt-4">Use code MARKETREADY for $100 off (limited time)</p>
+              <p className="text-center text-sm text-gray-500 mt-4">
+                Use code MARKETREADY for $100 off (limited time)
+              </p>
             </CardContent>
           </Card>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-20 bg-gray-50">
+      <section
+        id="testimonials"
+        className="py-20 bg-gray-50"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -367,10 +447,15 @@ export default function PMMSchoolLanding() {
                   "No frills, no fluff—just straight-to-the-point, actionable insights. I landed my first PMM role thanks to this course!",
               },
             ].map((testimonial, index) => (
-              <Card key={index} className="p-6">
+              <Card
+                key={index}
+                className="p-6"
+              >
                 <CardContent className="p-0">
                   <Quote className="h-8 w-8 text-purple-600 mb-4" />
-                  <p className="text-gray-700 mb-6 italic">"{testimonial.quote}"</p>
+                  <p className="text-gray-700 mb-6 italic">
+                    "{testimonial.quote}"
+                  </p>
                   <div className="flex items-center gap-3">
                     <Image
                       src={testimonial.image || "/placeholder.svg"}
@@ -380,7 +465,9 @@ export default function PMMSchoolLanding() {
                       className="rounded-full"
                     />
                     <div>
-                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                      <p className="font-semibold text-gray-900">
+                        {testimonial.name}
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -390,54 +477,16 @@ export default function PMMSchoolLanding() {
         </div>
       </section>
 
-      {/* Personal Introduction Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                  Paula Joyce Ucol
-                </span>
-              </h2>
-            </div>
-
-            <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed">
-              <p>It's just a rough version for now and may not fully reflect the final content or layout.</p>
-
-              <p>
-                If you're interested, I'd be happy to continue working on it and complete the full redesign. Just let me
-                know!
-              </p>
-
-              <div className="pt-4">
-                <p className="text-xl font-medium text-gray-900">
-                  Thanks,
-                  <br />
-                  Paula Joyce Ucol
-                </p>
-              </div>
-            </div>
-
-            <div className="pt-8">
-                <p
-                  size="lg"
-                  className="font-bold px-8"
-                >
-                  Email me at ucol.12.paula@gmail.com
-                </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Technologies Used Section */}
       <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="text-2xl font-bold text-gray-900">Built With Modern Technologies</h2>
-            <p className="text-gray-600 mt-2">This website was crafted using the following technologies:</p>
+            <h2 className="text-2xl font-bold text-gray-900">
+              Built With Modern Technologies
+            </h2>
+            <p className="text-gray-600 mt-2">
+              This website was crafted using the following technologies:
+            </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
@@ -475,7 +524,9 @@ export default function PMMSchoolLanding() {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600">Fully responsive, accessible, and optimized for performance</p>
+            <p className="text-gray-600">
+              Fully responsive, accessible, and optimized for performance
+            </p>
           </div>
         </div>
       </section>
@@ -487,25 +538,34 @@ export default function PMMSchoolLanding() {
             <div>
               <h3 className="font-bold text-lg mb-4">PMM School</h3>
               <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Course</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Curriculum
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Pricing
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Success Stories
                   </a>
                 </li>
@@ -515,17 +575,26 @@ export default function PMMSchoolLanding() {
               <h4 className="font-semibold mb-4">Resources</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Templates
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Community
                   </a>
                 </li>
@@ -535,17 +604,26 @@ export default function PMMSchoolLanding() {
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Help Center
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Contact
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="#"
+                    className="hover:text-white"
+                  >
                     Privacy
                   </a>
                 </li>
@@ -558,5 +636,5 @@ export default function PMMSchoolLanding() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
