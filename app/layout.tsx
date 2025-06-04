@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "REDESIGN",
+  title: "PMM School",
   description: "PMM School",
 };
 
