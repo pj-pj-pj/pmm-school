@@ -1,77 +1,71 @@
 "use client";
 
-import { Trophy, Rocket, BookOpenText, WandSparkles } from "lucide-react";
-
-export default function HowIHelp({ isVisible }: any) {
-  const stats = [
+export default function ProblemSolution() {
+  const steps = [
     {
-      heading: "Master PMM foundations",
-      label: "with real case studies and expert insights",
-      icon: BookOpenText,
+      number: 1,
+      title: "Master PMM foundations",
+      description: "with real case studies and expert insights",
     },
     {
-      heading: "Build a standout resume",
-      label: "that catches recruiters’ attention",
-      icon: WandSparkles,
+      number: 2,
+      title: "Build a standout resume",
+      description: "that catches recruiters' attention",
     },
     {
-      heading: "Ace your interviews",
-      label: "with detailed mock interview breakdowns",
-      icon: Trophy,
+      number: 3,
+      title: "Ace your interviews",
+      description: "with detailed mock interview breakdowns",
     },
     {
-      heading: "Make an impact",
-      label: "with simple, effective PMM frameworks",
-      icon: Rocket,
+      number: 4,
+      title: "Make an impact",
+      description: "with simple, effective PMM frameworks",
     },
   ];
 
   return (
-    <section className="py-16 bg-purple-50">
+    <section
+      id="problem-solution"
+      className="py-20 bg-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center gap-3 flex-col mb-10">
-          <h2 className="text-4xl lg:text-5xl text-center font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            Here's How I Can Help
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-gray-900">
+            Here's how I can help:
           </h2>
-          <p className="mx-3 text-lg lg:text-2xl text-center text-gray-800 max-w-3xl">
-            I've turned <span className="font-bold text-black">10+ years</span>{" "}
-            of PMM experience at Google and startups into a{" "}
-            <span className="font-bold text-black">step-by-step system</span> to
-            help you
-          </p>
         </div>
-        <div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8"
-          data-animate
-          id="stats"
-        >
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="text-center transform transition-all duration-500 hover:scale-110 hover:-translate-y-2 cursor-pointer "
-              style={{
-                transform: isVisible["stats"]
-                  ? "translateY(0)"
-                  : "translateY(30px)",
-                opacity: isVisible["stats"] ? 1 : 0,
-                transitionDelay: `${index * 100}ms`,
-              }}
-            >
-              <div className="relative w-16 h-16 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 hover:rotate-12 transition-transform duration-300">
-                {/* Numbered badge */}
-                <div className="absolute -top-2 -left-2 w-8 h-8 bg-gradient-to-r from-green-500 to-yellow-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg hover:scale-110 transition-transform duration-200 z-10">
-                  {index + 1}
+
+        <div className="border-t border-gray-200 pt-6 mb-6"></div>
+
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-xl text-gray-800">
+              I've turned <span className="font-bold">10+ years</span> of PMM
+              experience at Google and startups into a{" "}
+              <span className="font-bold">step-by-step system</span> to help
+              you:
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {steps.map((step) => (
+              <div
+                key={step.number}
+                className="flex items-center  gap-4 bg-violet-50 border-[1px] border-violet-500 px-3 py-4 pl-5 rounded-2xl"
+              >
+                <div className="flex-shrink-0 w-10 h-10 bg-purple-500 text-white rounded-lg flex items-center justify-center font-bold text-lg">
+                  {step.number}
                 </div>
-                <stat.icon className="h-8 w-8 text-white" />
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-700">{step.description}</p>
+                </div>
               </div>
-              <div className="text-xl lg:text-2xl font-bold text-gray-900">
-                {stat.heading}
-              </div>
-              <div className="text-gray-700 text-md lg:text-lg">
-                {stat.label}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

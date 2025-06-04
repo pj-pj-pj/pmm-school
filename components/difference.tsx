@@ -2,11 +2,11 @@
 
 import { Film, LibraryBig, Flame, HandHeart } from "lucide-react";
 
-export default function PMMSchoolDifference({ isVisible }: any) {
-  const stats = [
+export default function PMMSchoolDifference() {
+  const features = [
     {
       heading: "Actionable & no fluff",
-      label: "Learn real-world strategies, not theory you’ll never use.",
+      label: "Learn real-world strategies, not theory you'll never use.",
       icon: Flame,
     },
     {
@@ -27,50 +27,31 @@ export default function PMMSchoolDifference({ isVisible }: any) {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center gap-3 flex-col mb-10">
-          <h2 className="text-4xl lg:text-5xl text-center font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-            What makes PMM School different?
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            What Makes <span className="bg-violet-300 px-1">PMM School</span>{" "}
+            Different?
           </h2>
-          <p className="mx-3 text-lg lg:text-2xl text-center text-gray-800 max-w-3xl">
-            The{" "}
-            <span className="font-bold text-black">
-              structured, no-fluff way
-            </span>{" "}
-            to break into product marketing
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            The structured, no-fluff way to break into product marketing
           </p>
         </div>
-        <div
-          className="grid grid-cols-2 md:grid-cols-4 gap-8"
-          data-animate
-          id="stats"
-        >
-          {stats.map((stat, index) => (
+
+        <div className="grid md:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
             <div
               key={index}
-              className="text-center transform transition-all duration-500 hover:scale-110 hover:-translate-y-2 cursor-pointer "
-              style={{
-                transform: isVisible["stats"]
-                  ? "translateY(0)"
-                  : "translateY(30px)",
-                opacity: isVisible["stats"] ? 1 : 0,
-                transitionDelay: `${index * 100}ms`,
-              }}
+              className="text-center"
             >
-              <div className="relative w-16 h-16 bg-gradient-to-r from-red-400 to-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4 hover:rotate-12 transition-transform duration-300">
-                {/* Numbered badge
-                <div className="absolute -top-2 -left-2 w-8 h-8 bg-gradient-to-r from-green-500 to-yellow-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg hover:scale-110 transition-transform duration-200 z-10">
-                  {index + 1}
-                </div> */}
-                <stat.icon className="h-8 w-8 text-white" />
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <feature.icon className="h-8 w-8 text-purple-600" />
               </div>
-              <div className="text-xl lg:text-2xl font-bold text-gray-900">
-                {stat.heading}
-              </div>
-              <div className="text-gray-700 text-md lg:text-lg">
-                {stat.label}
-              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                {feature.heading}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">{feature.label}</p>
             </div>
           ))}
         </div>
