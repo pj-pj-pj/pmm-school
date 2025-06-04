@@ -56,7 +56,7 @@ export default function PMMSchoolLanding() {
       },
       {
         threshold: 0.1,
-        rootMargin: "-120px 0px 0px 0px",
+        rootMargin: "-200px 0px 0px 0px",
       }
     );
 
@@ -112,7 +112,7 @@ export default function PMMSchoolLanding() {
 
   return (
     <div
-      id="page"
+      id="hero"
       className="min-h-screen bg-white"
     >
       {/* Floating cursor effect */}
@@ -125,11 +125,12 @@ export default function PMMSchoolLanding() {
         }}
       />
 
-      {/* Promotional Banner
-      <PromotionalBanner /> */}
-
+      {/* Promotional Banner */}
+      <PromotionalBanner />
       {/* Navigation */}
-      <Navigation />
+      <div className="sticky top-0 z-[999999]">
+        <Navigation />
+      </div>
 
       {/* Hero Section */}
       <HeroSection isVisible={isVisible} />
@@ -318,7 +319,7 @@ export default function PMMSchoolLanding() {
       {/* Personal Introduction Section
       <section
         id="personal-intro"
-        className="relative py-20 overflow-hidden"
+        className="relative py-20 overflow-x-hidden"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-purple-400 via-pink-500 to-blue-500 opacity-15 animate-gradient-xy"></div>
         <div className="relative z-10">

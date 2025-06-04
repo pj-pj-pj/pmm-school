@@ -7,19 +7,12 @@ export default function ProblemSolution({ isVisible }: any) {
   return (
     <section
       id="problem-solution"
-      className="py-12 bg-gray-50"
+      className="py-20 bg-gray-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className="text-center mb-12"
           data-animate
-          id="problem-title"
-          style={{
-            transform: isVisible["problem-title"]
-              ? "translateY(0)"
-              : "translateY(30px)",
-            opacity: isVisible["problem-title"] ? 1 : 0,
-          }}
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
             Feeling{" "}

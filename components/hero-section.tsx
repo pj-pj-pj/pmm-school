@@ -11,7 +11,7 @@ const handleClick = () => {
 
 export default function HeroSection({ isVisible }: any) {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-18 mx-auto z-10">
+    <section className="py-16 lg:py-18 mx-auto overflow-x-hidden overflow-y-auto">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-400 via-blue-500 to-purple-600 opacity-10 animate-gradient-x"></div>
 
       {/* Floating shapes */}

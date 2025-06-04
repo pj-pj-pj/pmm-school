@@ -1,9 +1,11 @@
+"use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import PromotionalBanner from "./promotional-banner";
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isHeroVisible, setIsHeroVisible] = useState(true);
 
   const navItems = [
     { name: "Home", href: "hero" },
@@ -14,7 +16,21 @@ export default function Navigation() {
     { name: "About", href: "personal-intro" },
   ];
 
-  // Close mobile menu when clicking a navigation link
+  useEffect(() => {
+    const heroSection = document.getElementById("hero");
+    if (!heroSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsHeroVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(heroSection);
+    return () => observer.disconnect();
+  }, []);
+
   const handleNavClick = (sectionId: string) => {
     setMobileMenuOpen(false);
     const element = document.getElementById(sectionId);
@@ -23,7 +39,6 @@ export default function Navigation() {
     }
   };
 
-  // Handle window resize to close mobile menu on larger screens
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768 && mobileMenuOpen) {
@@ -37,17 +52,16 @@ export default function Navigation() {
   return (
     <nav
       id="navigation"
-      className="border-b bg-white/95 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300"
+      className={`bg-white/95 backdrop-blur-sm border-b transition-all duration-300`}
     >
-      <PromotionalBanner />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14">
           <div className="font-bold text-xl text-gray-900 hover:scale-110 transition-transform duration-200 cursor-pointer">
             PMM School
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 font-medium">
+          <div className="hidden md:flex items-center space-x-6 font-medium z-50">
             {navItems.map((item, index) => (
               <a
                 key={index}
@@ -61,7 +75,7 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden font-medium">
+          <div className="md:hidden font-medium z-50">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-md text-gray-600 hover:text-purple-600 hover:bg-gray-100 focus:outline-none"
@@ -96,4 +110,3 @@ export default function Navigation() {
     </nav>
   );
 }
-// https://whop.com/checkout/plan_N33HzUKtBVsCn/

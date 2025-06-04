@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function BonusSection({ isVisible }: any) {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-18 mx-auto">
+    <section className="relative overflow-x-hidden py-20 lg:py-18 mx-auto">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-400 via-blue-500 to-purple-600 opacity-10 animate-gradient-x"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -14,12 +14,12 @@ export default function BonusSection({ isVisible }: any) {
           <div
             className="space-y-8  transform transition-all duration-1000"
             data-animate
-            id="hero-content"
+            id="bonus-content"
             style={{
-              transform: isVisible["hero-content"]
+              transform: isVisible["bonus-content"]
                 ? "translateY(0) scale(1)"
                 : "translateY(50px) scale(0.95)",
-              opacity: isVisible["hero-content"] ? 1 : 0,
+              opacity: isVisible["bonus-content"] ? 1 : 0,
             }}
           >
             <div className="space-y-4">
@@ -81,12 +81,12 @@ export default function BonusSection({ isVisible }: any) {
               <div
                 className="relative z-10 transform transition-all duration-1000 group-hover:scale-105 group-hover:-rotate-3 px-2 py-2"
                 data-animate
-                id="hero-image"
+                id="bonus-image"
                 style={{
-                  transform: isVisible["hero-image"]
+                  transform: isVisible["bonus-image"]
                     ? "translateY(0) rotate(0deg)"
                     : "translateY(30px) rotate(-5deg)",
-                  opacity: isVisible["hero-image"] ? 1 : 0,
+                  opacity: isVisible["bonus-image"] ? 1 : 0,
                 }}
               >
                 <Image

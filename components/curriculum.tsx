@@ -102,7 +102,7 @@ export default function Curriculum({ isVisible }: any) {
             ].map((item, index) => (
               <Card
                 key={index}
-                className={`p-6 hover:shadow-xl hover:-translate-y-4 transition-all duration-500 overflow-hidden group cursor-pointer ${
+                className={`p-6 hover:shadow-xl hover:-translate-y-4 transition-all duration-500 overflow-x-hidden overflow-y-auto group cursor-pointer ${
                   index === 0 || index === 2 ? "md:mt-[-2rem] md:mb-8" : ""
                 }  `}
                 data-animate
