@@ -14,12 +14,13 @@ import FAQSection from "@/components/faq-section";
 import AboutSection from "@/components/about-section";
 import Footer from "@/components/footer";
 import CareerInvestmentSection from "@/components/career-investment-section";
+import Testimonials from "@/components/testimonials";
 
 export default function PMMSchoolLanding() {
   return (
     <div
       id="hero"
-      className="min-h-screen bg-white"
+      className="min-h-screen bg-white font-['Poppins'] text-sm"
     >
       {/* Promotional Banner */}
       <PromotionalBanner />
@@ -50,10 +51,11 @@ export default function PMMSchoolLanding() {
       {/* Pricing */}
       <Pricing />
 
+      {/* Testimonials */}
+      <Testimonials />
+
       {/* Career Investment Section */}
       <CareerInvestmentSection />
-
-      {/* Testimonials */}
 
       {/* Graduates Section */}
       <GraduatesSection />

@@ -1,85 +1,124 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, X, ArrowRight } from "lucide-react";
 
 const handleClick = () => {
   window.open("https://whop.com/checkout/plan_N33HzUKtBVsCn/", "_blank");
 };
 
 export default function Pricing() {
+  const features = [
+    {
+      description: `<span style="background-color: #fee2e2; padding: 0 3px;">7+ hours</span> of expert-led content`,
+      colorText: "text-orange-400",
+    },
+    {
+      description: `One complimentary <span style="background-color: #fee2e2; padding: 0 3px;">1:1 coaching</span>`,
+      colorText: "text-blue-400",
+    },
+    {
+      description: `LinkedIn <span style="background-color: #fee2e2; padding: 0 3px;">certification</span>`,
+      colorText: "text-red-400",
+    },
+    {
+      description: `<span style="background-color: #fee2e2; padding: 0 3px;">Exclusive</span> bonus content`,
+      colorText: "text-violet-400",
+    },
+  ];
+
   return (
     <section
       id="pricing"
-      className="py-20 bg-gray-50"
+      className="py-16 md:py-24"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Learn <span className="bg-violet-400 px-1">Practical</span> and{" "}
-            <span className="bg-violet-300 px-1">Actionable</span> Product
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Learn <span className="bg-purple-400 px-1">Practical</span> and{" "}
+            <span className="bg-purple-300 px-1">Actionable</span> Product
             Marketing
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-lg text-gray-800">
             One-time payment, lifetime access to everything you need
           </p>
         </div>
 
-        <Card className="border-0 shadow-2xl relative overflow-hidden">
-          <CardContent className="p-12">
-            <div className="text-center mb-10">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                Complete PMM Mastery
+        <div className="grid md:grid-cols-[1.9fr_2fr] gap-12 mb-10">
+          {/* Left Card - Total Value */}
+          <div className="bg-gray-50 p-8 rounded-sm shadow-md border border-gray-400">
+            <div className="text-center mb-8">
+              <h3 className="text-lg font-semibold text-gray-600 mb-2">
+                Total Value of PMM School:
               </h3>
-              <div className="flex items-center justify-center gap-4 mb-6">
-                <span className="text-6xl font-bold text-gray-900">$499</span>
-                <div className="text-left">
-                  <div className="text-2xl text-gray-400 line-through">
-                    $1995
-                  </div>
-                  <div className="text-sm text-green-600 font-semibold">
-                    Save 75%
-                  </div>
-                </div>
+              <div className="text-2xl font-bold text-gray-600 line-through mb-6">
+                $1995
               </div>
-              <p className="text-lg text-gray-600">
-                One-time payment • Lifetime access
-              </p>
             </div>
 
-            <div className="space-y-6 mb-10">
-              {[
-                "7+ hours of expert-led content",
-                "One complimentary 1:1 coaching",
-                "LinkedIn certification",
-                "Exclusive bonus content",
-              ].map((feature, index) => (
+            <div className="space-y-4">
+              {["But obviously", "You don't", "have", "$1995"].map(
+                (item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-3 italic"
+                  >
+                    <X className="h-5 w-5 text-red-500 flex-shrink-0" />
+                    <span className="text-base text-gray-500 line-through">
+                      {item}
+                    </span>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          {/* Right Card - Actual Price */}
+          <div className="bg-white p-8 rounded-sm shadow-md border-2 border-violet-400">
+            <div className="text-center mb-8">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                So instead you'll just pay:
+              </h3>
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <span className="text-2xl font-bold text-gray-900">$499</span>
+                <span className="text-base text-gray-600">
+                  (lifetime access)
+                </span>
+              </div>
+            </div>
+
+            <div className="space-y-4 mb-8 md:mb-16 mt-12">
+              {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-4"
+                  className="flex items-center gap-3"
                 >
-                  <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">{feature}</span>
+                  <CheckCircle
+                    className={`h-5 w-5 text-violet-500 flex-shrink-0`}
+                  />
+                  <span
+                    className="text-base text-gray-700"
+                    dangerouslySetInnerHTML={{ __html: feature.description }}
+                  />
                 </div>
               ))}
             </div>
 
             <Button
               onClick={handleClick}
-              className="w-full bg-purple-600 hover:bg-purple-700 text-md text-white py-6 font-semibold rounded-lg"
+              className="cursor-pointer w-full bg-violet-500 hover:bg-violet-700 text-white py-5 text-base font-semibold rounded-xs"
             >
-              Start Your PMM Journey Today
-              <ArrowRight className="ml-2 h-6 w-6" />
+              Start My PMM Journey
+              <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
 
-            <p className="text-center text-gray-500 mt-6">
+            <p className="text-center text-gray-500 mt-4 text-sm">
               Use code{" "}
-              <span className="font-semibold text-purple-600">MARKETREADY</span>{" "}
+              <span className="font-semibold text-purple-500">MARKETREADY</span>{" "}
               for $100 off
             </p>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </div>
     </section>
   );

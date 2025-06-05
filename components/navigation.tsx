@@ -2,11 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-
-const handleClick = () => {
-  window.open("https://whop.com/checkout/plan_N33HzUKtBVsCn/", "_blank");
-};
+import Image from "next/image";
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,19 +26,19 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="font-bold text-2xl text-gray-900">PMM School</div>
+    <nav className="bg-white border-b border-gray-200">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-14">
+          <div className="font-bold text-lg text-gray-900">PMM School</div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item, index) => (
               <a
                 key={index}
                 href={`#${item.href}`}
                 onClick={() => handleNavClick(item.href)}
-                className="text-gray-600 hover:text-purple-600 font-medium transition-colors"
+                className="text-sm text-gray-800 hover:text-purple-500 transition-colors font-['Poppins']"
               >
                 {item.name}
               </a>
@@ -53,12 +49,12 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-gray-600 hover:text-purple-600"
+              className="p-2 rounded-sm text-gray-600 hover:text-purple-500"
             >
               {mobileMenuOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-5 w-5" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-5 w-5" />
               )}
             </button>
           </div>
@@ -74,7 +70,7 @@ export default function Navigation() {
                 key={index}
                 href={`#${item.href}`}
                 onClick={() => handleNavClick(item.href)}
-                className="block py-3 px-4 text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-md"
+                className="block py-2 px-4 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-500 rounded-sm font-['Poppins']"
               >
                 {item.name}
               </a>

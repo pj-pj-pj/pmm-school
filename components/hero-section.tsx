@@ -10,57 +10,61 @@ const handleClick = () => {
 
 export default function HeroSection() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+    <section className="py-16 md:py-24 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <div className="space-y-8">
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-none">
                 Launch and grow your{" "}
-                <span className="text-purple-600">PMM career</span>
+                <span className="text-violet-600">PMM career</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-base text-gray-900">
                 Get the complete toolkit to master product marketing from A to
                 Z, ace your interviews, and accelerate your career.
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               {[
-                "Master product marketing from A to Z 💪",
-                "Ace your PMM interviews with confidence 🎯",
-                "Make an impact and accelerate your career 🚀",
+                "Master product marketing from A to Z",
+                "Ace your PMM interviews with confidence",
+                "Make an impact and accelerate your career",
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-4"
+                  className="flex items-center gap-3"
                 >
-                  <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">{item}</span>
+                  <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
+                  <span className="text-gray-700 text-base">{item}</span>
                 </div>
               ))}
             </div>
 
-            <div className="pt-4">
+            <div className="pt-2">
               <Button
                 onClick={handleClick}
-                size="lg"
-                className="cursor-pointer bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-lg"
+                size={"default"}
+                className="text-base cursor-pointer bg-violet-500 hover:bg-violet-600 text-white py-5 rounded-xs"
               >
-                Start Learning Today
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Start Today
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
           </div>
 
-          <div className="relative px-12">
+          <div className="relative px-8">
             <div className="relative overflow-hidden w-full flex items-center justify-center">
               <Image
                 src="/WebsiteAssets/Headshot 1.JPG"
                 alt="PMM School Instructor"
-                width={350}
-                height={600}
-                className="shadow-2xl rounded-2xl object-cover"
+                width={300}
+                height={500}
+                className="shadow-2xl rounded-tr-2xl rounded-br-2xl object-cover"
+                style={{
+                  maskImage:
+                    "linear-gradient(to left, rgba(0,0,0,1) 80%, rgba(0,0,0,.01))",
+                }}
               />
             </div>
           </div>

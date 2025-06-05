@@ -7,26 +7,26 @@ const handleClick = () => {
 
 export default function PromotionalBanner() {
   return (
-    <section className="bg-gray-900 text-white py-3 px-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <section className="bg-gray-900 text-white py-4 md:py-3 px-4">
+      <div className="max-w-5xl mx-auto flex items-center justify-center gap-2 md:gap-4">
         <div className="flex items-center font-medium">
-          <span className="hidden sm:inline text-sm lg:text-base">
+          <span className="hidden sm:inline text-sm">
             Apply code{" "}
             <span className="font-bold text-purple-400">"MARKETREADY"</span> to
             get $100 off at checkout
           </span>
           <span className="sm:hidden text-xs text-center">
-            Code{" "}
+            Apply code{" "}
             <span className="font-bold text-purple-400">"MARKETREADY"</span> to
-            get $100 off
+            get $100 off at checkout
           </span>
         </div>
         <Button
           size="sm"
-          className="bg-purple-600 hover:bg-purple-700 text-white border-0 text-xs lg:text-sm font-semibold"
+          className=" cursor-pointer text-purple-400 rounded-xs bg-transparent border border-purple-400 hover:bg-gray-700 text-xs md:text-sm font-medium px-3 py-2"
           onClick={handleClick}
         >
-          START NOW
+          Start My PMM Journey
         </Button>
       </div>
     </section>
