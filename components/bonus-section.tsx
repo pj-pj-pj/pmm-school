@@ -48,7 +48,7 @@ export default function BonusSection() {
           </div>
 
           <div className="relative px-4 md:ml-7 md:my-auto">
-            <div className="hidden lg:inline absolute inset-0 w-[55%] h-[82%] md:bg-green-100 rounded-br-4xl rounded-tr-4xl ml-auto mt-auto"></div>
+            <div className="hidden lg:inline absolute inset-0 w-[85%] md:bg-green-100 rounded-br-4xl ml-auto mt-auto"></div>
             {/* Scattered Background Emojis */}
             {/* <div className="absolute inset-0 pointer-events-none overflow-hidden z-20">
               <span className="absolute top-20 left-4 text-3xl animate-float">

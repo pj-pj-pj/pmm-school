@@ -33,7 +33,7 @@ export default function TestimonialGrid({
             </div>
           </div>
           <p
-            className="text-base text-gray-900 mt-6"
+            className="text-base text-gray-700 mt-6"
             dangerouslySetInnerHTML={{ __html: testimonial.text }}
           />
         </div>
