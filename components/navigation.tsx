@@ -2,15 +2,14 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "hero" },
-    { name: "Why PMM School", href: "problem-solution" },
-    { name: "Learn", href: "curriculum" },
+    { name: "Home", href: "home" },
+    { name: "Why PMM School", href: "why-pmm-school" },
+    { name: "Learn", href: "learn" },
     { name: "Pricing", href: "pricing" },
     { name: "Testimonials", href: "testimonials" },
     { name: "FAQ", href: "faq" },

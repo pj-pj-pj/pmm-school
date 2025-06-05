@@ -51,7 +51,7 @@ export default function Testimonials() {
               key={index}
               className="shadow-lg rounded-sm h-full flex flex-col border border-violet-300"
             >
-              <CardContent className="flex flex-col h-full py-4">
+              <CardContent className="flex flex-col h-full">
                 <div className="flex flex-col h-full">
                   <Quote className="h-6 w-6 text-violet-500 mb-6" />
                   <p
@@ -67,7 +67,7 @@ export default function Testimonials() {
                       alt={testimonial.name}
                       width={40}
                       height={40}
-                      className="rounded-full h-12 w-12 object-cover mr-3 border border-black shadow-[-6px_2px_2px_0px_rgba(147,_51,_234,_0.5)]"
+                      className="rounded-full h-12 w-12 object-cover mr-3 border border-black"
                     />
                     <div>
                       <p className="font-semibold text-gray-900 text-base">

@@ -19,8 +19,8 @@ import Testimonials from "@/components/testimonials";
 export default function PMMSchoolLanding() {
   return (
     <div
-      id="hero"
-      className="min-h-screen bg-white font-['Poppins'] text-sm"
+      id="home"
+      className="min-h-screen bg-white text-sm"
     >
       {/* Promotional Banner */}
       <PromotionalBanner />
