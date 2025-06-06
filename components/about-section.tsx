@@ -11,10 +11,12 @@ export default function AboutSection() {
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 ">
-            Learn from someone with{" "}
-            <span className="text-purple-500">10+ years</span> of product
-            marketing experience
+          <h2 className="max-w-4xl mx-auto text-3xl font-bold text-gray-900 mb-4 ">
+            Learn from someone
+            <div>
+              with <span className="text-purple-500">10+ years</span> of product
+              marketing experience
+            </div>
           </h2>
         </div>
 
