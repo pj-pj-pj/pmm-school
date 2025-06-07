@@ -34,7 +34,7 @@ export default function Testimonials() {
 
   return (
     <section
-      id="student-wins"
+      id="testimonials"
       className="py-16 md:py-24 bg-gray-50"
     >
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">

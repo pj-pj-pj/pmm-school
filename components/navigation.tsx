@@ -11,7 +11,7 @@ export default function Navigation() {
     { name: "What You'll Learn", href: "what-youll-learn" },
     { name: "Why PMM School", href: "why-pmm-school" },
     { name: "Pricing", href: "pricing" },
-    { name: "Student Wins", href: "student-wins" },
+    { name: "Testimonials", href: "testimonials" },
     { name: "FAQ", href: "faq" },
     { name: "About", href: "about" },
   ];
