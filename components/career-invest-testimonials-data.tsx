@@ -42,7 +42,7 @@ export const testimonials = [
       .replace(/\n\s+/g, " ")
       .trim(),
     name: "Avi",
-    profileImage: "/WebsiteAssets/InvestProfiles/Avi.png",
+    profileImage: "/WebsiteAssets/InvestProfiles/Avi.jpg",
     color: "bg-violet-200 border border-violet-300",
     span: "row-span-1",
   },
@@ -52,7 +52,7 @@ export const testimonials = [
       <div style="margin-bottom: 0.5rem;">
       I hope you're doing well! I just wanted to share some good news - I'll be starting at <strong>ServiceNow as an EMEA Communications Intern</strong> this September.
       </div>
-      Thank you so much for all your support and guidance, especially for the case assignment. Your course <span style="
+      Your course <span style="
            background-color: #ffe79c;
            border-radius: 1px; 
            vertical-align: middle;
