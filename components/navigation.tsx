@@ -8,10 +8,10 @@ export default function Navigation() {
 
   const navItems = [
     { name: "Home", href: "home" },
+    { name: "What You'll Learn", href: "what-youll-learn" },
     { name: "Why PMM School", href: "why-pmm-school" },
-    { name: "Learn", href: "learn" },
     { name: "Pricing", href: "pricing" },
-    { name: "Testimonials", href: "testimonials" },
+    { name: "Student Wins", href: "student-wins" },
     { name: "FAQ", href: "faq" },
     { name: "About", href: "about" },
   ];

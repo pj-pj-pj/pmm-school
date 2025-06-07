@@ -8,9 +8,7 @@ export default function GraduatesSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl font-bold text-gray-900 mb-18">
-            <span className="bg-violet-300 px-2">PMM School</span>{" "}
-            <span className="bg-indigo-300 px-2">graduates</span> work at
-            companies like:
+            PMM School graduates work at companies like:
           </h2>
         </div>
 

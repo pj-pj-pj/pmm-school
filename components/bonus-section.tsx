@@ -31,7 +31,6 @@ export default function BonusSection() {
                 "<b>Exclusive Videos & Insights</b> – Access premium content not available anywhere else, including in-depth case studies and insider career tips.",
                 "<b>LinkedIn Certification</b> – Showcase your achievement on LinkedIn and strengthen your personal brand.",
                 "<b>Q&A Forum</b> – Ask me any product marketing-related question, and I'll personally respond within 48 hours.",
-                "<b>Video Request Forum</b> – Have a specific topic you want covered? Submit your request, and get priority on new video content.",
               ].map((item, index) => (
                 <div
                   key={index}
@@ -49,56 +48,6 @@ export default function BonusSection() {
 
           <div className="relative px-4 md:ml-7 md:my-auto">
             <div className="hidden lg:inline absolute inset-0 w-[85%] md:bg-green-100 rounded-br-4xl ml-auto mt-auto"></div>
-            {/* Scattered Background Emojis */}
-            {/* <div className="absolute inset-0 pointer-events-none overflow-hidden z-20">
-              <span className="absolute top-20 left-4 text-3xl animate-float">
-                ✒️
-              </span>
-              <span
-                className="absolute top-20 right-8 text-4xl animate-float"
-                style={{ animationDelay: "0.8s" }}
-              >
-                �
-              </span>
-              <span
-                className="absolute bottom-16 left-20 text-4xl animate-float"
-                style={{ animationDelay: "1.2s" }}
-              >
-                🤝
-              </span>
-              <span
-                className="absolute top-1/2 left-1/3 text-6xl animate-bounce"
-                style={{ animationDelay: "0.4s" }}
-              >
-                🎯
-              </span>
-              <span
-                className="absolute bottom-8 right-4 text-2xl animate-pulse"
-                style={{ animationDelay: "1s" }}
-              >
-                💡
-              </span>
-              
-              <span
-                className="absolute top-1/4 right-12 text-3xl animate-float"
-                style={{ animationDelay: "1.5s" }}
-              >
-                📊
-              </span>
-              <span
-                className="absolute bottom-24 right-1/4 text-3xl animate-float"
-                style={{ animationDelay: "0.6s" }}
-              >
-                🚀
-              </span>
-              <span
-                className="absolute top-32 left-1/4 text-2xl animate-spin-slow"
-                style={{ animationDelay: "0.3s" }}
-              >
-                ✨
-              </span>
-            </div> */}
-
             <div className="relative overflow-hidden lg:-ml-22 lg:pt-34 mx-auto">
               <Image
                 src="/WebsiteAssets/CurriculumModules/Bonus.png"

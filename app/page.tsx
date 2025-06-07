@@ -35,14 +35,10 @@ export default function PMMSchoolLanding() {
 
       {/* Problem/Solution Section */}
       <ProblemSolution />
-
-      {/* How I Help Section */}
       <HowIHelp />
 
       {/* What You'll Learn */}
       <Curriculum />
-
-      {/* BONUS section */}
       <BonusSection />
 
       {/* PMM School Difference */}

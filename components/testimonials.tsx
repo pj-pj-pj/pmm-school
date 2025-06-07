@@ -34,7 +34,7 @@ export default function Testimonials() {
 
   return (
     <section
-      id="testimonials"
+      id="student-wins"
       className="py-16 md:py-24 bg-gray-50"
     >
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,16 +61,16 @@ export default function Testimonials() {
                     }}
                   />
 
-                  <div className="flex items-center mt-auto">
+                  <div className="flex items-center">
                     <Image
-                      src={testimonial.image}
+                      src={testimonial.image || "/placeholder.svg"}
                       alt={testimonial.name}
-                      width={40}
-                      height={40}
-                      className="rounded-full h-12 w-12 object-cover mr-3 border border-black"
+                      width={56}
+                      height={56}
+                      className="rounded-full border border-violet-400 h-14 w-14 object-cover mr-4"
                     />
                     <div>
-                      <p className="font-semibold text-gray-900 text-base">
+                      <p className="font-semibold text-gray-900 text-base font-['Poppins']">
                         {testimonial.name}
                       </p>
                     </div>

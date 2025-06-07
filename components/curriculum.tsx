@@ -49,7 +49,7 @@ export default function Curriculum() {
 
   return (
     <section
-      id="learn"
+      id="what-youll-learn"
       className="py-16 md:py-24"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

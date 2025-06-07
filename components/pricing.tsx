@@ -10,19 +10,19 @@ const handleClick = () => {
 export default function Pricing() {
   const features = [
     {
-      description: `<span style="background-color: #fee2e2; padding: 0 3px;">7+ hours</span> of expert-led content`,
+      description: `<span style="background-color: #dcfce7; font-weight: 600; padding: 0 3px;">7+ hours</span> of expert-led content`,
       colorText: "text-orange-400",
     },
     {
-      description: `One complimentary <span style="background-color: #fee2e2; padding: 0 3px;">1:1 coaching</span>`,
+      description: `One complimentary <span style="background-color: #dcfce7; font-weight: 600; padding: 0 3px;">1:1 coaching</span>`,
       colorText: "text-blue-400",
     },
     {
-      description: `LinkedIn <span style="background-color: #fee2e2; padding: 0 3px;">certification</span>`,
+      description: `LinkedIn <span style="background-color: #dcfce7; font-weight: 600; padding: 0 3px;">certification</span>`,
       colorText: "text-red-400",
     },
     {
-      description: `<span style="background-color: #fee2e2; padding: 0 3px;">Exclusive</span> bonus content`,
+      description: `<span style="background-color: #dcfce7; font-weight: 600; padding: 0 3px;">Exclusive</span> bonus content`,
       colorText: "text-violet-400",
     },
   ];
@@ -35,8 +35,8 @@ export default function Pricing() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Learn <span className="bg-purple-400 px-1">Practical</span> and{" "}
-            <span className="bg-purple-300 px-1">Actionable</span> Product
+            Learn <span className="bg-indigo-200 px-1">Practical</span> and{" "}
+            <span className="bg-indigo-300 px-1">Actionable</span> Product
             Marketing
           </h2>
           <p className="text-lg text-gray-800">
@@ -44,14 +44,14 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-[1.9fr_2fr] gap-12 mb-10">
+        <div className="grid md:grid-cols-[1.9fr_2fr] gap-6 mb-10">
           {/* Left Card - Total Value */}
-          <div className="bg-gray-50 p-8 rounded-sm shadow-md border border-gray-400">
+          <div className="bg-gray-100 p-8 rounded-sm shadow-md border border-gray-200">
             <div className="text-center mb-8">
-              <h3 className="text-lg font-semibold text-gray-600 mb-2">
+              <h3 className="text-lg font-semibold text-gray-400 mb-2">
                 Total Value of PMM School:
               </h3>
-              <div className="text-2xl font-bold text-gray-600 line-through mb-6">
+              <div className="text-2xl font-bold text-gray-400 line-through mb-6">
                 $1995
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function Pricing() {
                     className="flex items-center gap-3 italic"
                   >
                     <X className="h-5 w-5 text-red-500 flex-shrink-0" />
-                    <span className="text-base text-gray-500 line-through">
+                    <span className="text-base text-gray-400 line-through">
                       {item}
                     </span>
                   </div>
@@ -74,7 +74,7 @@ export default function Pricing() {
           </div>
 
           {/* Right Card - Actual Price */}
-          <div className="bg-white p-8 rounded-sm shadow-md border-2 border-violet-400">
+          <div className="bg-white p-8 rounded-sm shadow-md border-2 border-gray-300">
             <div className="text-center mb-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 So instead you'll just pay:
@@ -87,14 +87,14 @@ export default function Pricing() {
               </div>
             </div>
 
-            <div className="space-y-4 mb-8 md:mb-16 mt-12">
+            <div className="space-y-4 mb-8 md:mb-12 mt-10">
               {features.map((feature, index) => (
                 <div
                   key={index}
                   className="flex items-center gap-3"
                 >
                   <CheckCircle
-                    className={`h-5 w-5 text-violet-500 flex-shrink-0`}
+                    className={`h-5 w-5 text-green-500 flex-shrink-0`}
                   />
                   <span
                     className="text-base text-gray-700"
@@ -106,7 +106,7 @@ export default function Pricing() {
 
             <Button
               onClick={handleClick}
-              className="cursor-pointer w-full bg-violet-500 hover:bg-violet-700 text-white py-5 text-base font-semibold rounded-xs"
+              className="cursor-pointer w-full bg-indigo-600 hover:bg-indigo-700 text-white py-6 text-base font-semibold rounded-xs"
             >
               Start My PMM Journey
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -114,7 +114,7 @@ export default function Pricing() {
 
             <p className="text-center text-gray-500 mt-4 text-sm">
               Use code{" "}
-              <span className="font-semibold text-purple-500">MARKETREADY</span>{" "}
+              <span className="font-semibold text-indigo-600">MARKETREADY</span>{" "}
               for $100 off
             </p>
           </div>
