@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ExternalLink, Mail } from "lucide-react";
+import AnimatedSection from "./animated-section";
 
 export default function AboutSection() {
   return (
@@ -20,19 +21,19 @@ export default function AboutSection() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-[1.1fr_2fr] gap-16 items-center">
+        <AnimatedSection className="grid md:grid-cols-[1.1fr_2fr] gap-16 items-center">
           <div className="relative flex justify-end">
             <Image
               src="/WebsiteAssets/Headshot 2.jpg"
               alt="Henry - PMM School Instructor"
               width={400}
               height={500}
-              className="object-cover rounded-full md:rounded-2xl  shadow-2xl mx-auto w-[350px] h-[350px] lg:w-full lg:h-full"
+              className="object-cover rounded-full md:rounded-2xl  shadow-2xl mx-auto w-[350px] h-[350px] lg:w-full lg:h-full hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]"
             />
           </div>
 
           <div className="space-y-8">
-            <div className="space-y-6">
+            <AnimatedSection className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900 ">
                 👋 Hey, I'm Henry!
               </h3>
@@ -57,14 +58,14 @@ export default function AboutSection() {
                   href="https://www.linkedin.com/in/huiwanghenry/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-purple-500 hover:text-purple-600 font-medium  text-base"
+                  className="flex items-center gap-2 text-purple-500 hover:text-purple-600 hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] font-medium  text-base"
                 >
                   <ExternalLink className="h-5 w-5" />
                   LinkedIn
                 </a>
                 <a
                   href="mailto:henry@pmmschool.com"
-                  className="flex items-center gap-2 text-purple-500 hover:text-purple-600 font-medium  text-base"
+                  className="flex items-center gap-2 text-purple-500 hover:text-purple-600 hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] font-medium  text-base"
                 >
                   <Mail className="h-5 w-5" />
                   henry@pmmschool.com
@@ -74,9 +75,9 @@ export default function AboutSection() {
               <p className="text-sm text-gray-500 italic pt-4 ">
                 (Course pricing is final—please no discount inquiries.)
               </p>
-            </div>
+            </AnimatedSection>
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

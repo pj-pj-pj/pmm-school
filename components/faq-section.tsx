@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import AnimatedSection from "./animated-section";
 
 export default function FAQSection() {
   const faqs = [
@@ -52,9 +53,9 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-16 md:py-28 bg-gray-100"
+      className="py-16 md:py-24 bg-gray-100"
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <AnimatedSection className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Frequently Asked <span className="text-purple-500">Questions</span>
@@ -70,7 +71,7 @@ export default function FAQSection() {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="bg-white rounded-sm px-8 max-w-3xl mx-auto shadow-lg"
+              className="bg-white rounded-sm px-8 max-w-3xl mx-auto shadow-lg hover:scale-[102%] transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]"
             >
               <AccordionTrigger className="cursor-pointer text-left text-base font-medium text-gray-900 hover:text-purple-500">
                 {faq.question}
@@ -81,7 +82,7 @@ export default function FAQSection() {
             </AccordionItem>
           ))}
         </Accordion>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }

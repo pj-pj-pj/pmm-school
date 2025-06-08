@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import AnimatedSection from "./animated-section";
 
 export default function GraduatesSection() {
   return (
     <section className="py-16 md:py-26 bg-white overflow-x-hidden">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <AnimatedSection className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl font-bold text-gray-900 mb-18">
             PMM School graduates work at companies like:
@@ -41,13 +42,13 @@ export default function GraduatesSection() {
                 width={0}
                 height={0}
                 sizes="(max-width: 640px) 50vw, (max-width: 768px) 30vw, 200px"
-                className="w-full h-auto max-h-16 md:max-h-24 object-contain self-center mx-auto"
+                className="hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] w-full h-auto max-h-16 md:max-h-24 object-contain self-center mx-auto"
                 style={{ width: "auto" }}
               />
             </div>
           ))}
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }

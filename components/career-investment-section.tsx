@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { testimonials } from "@/components/career-invest-testimonials-data";
 import dynamic from "next/dynamic";
+import AnimatedSection from "./animated-section";
 
 const TestimonialGrid = dynamic(
   () => import("@/components/career-invest-grid"),
@@ -31,17 +32,19 @@ export default function CareerInvestmentSection() {
           </p>
         </div>
 
-        <TestimonialGrid testimonials={testimonials} />
+        <AnimatedSection>
+          <TestimonialGrid testimonials={testimonials} />
+        </AnimatedSection>
 
-        <div className="text-center mt-12 lg:mt-16">
+        <AnimatedSection className="text-center mt-12 lg:mt-16">
           <Button
             onClick={handleClick}
-            className="cursor-pointer bg-violet-500 hover:bg-violet-600 text-white py-5 text-sm font-medium rounded-xs"
+            className="hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] cursor-pointer bg-violet-500 hover:bg-violet-600 text-white py-5 text-sm font-medium rounded-xs"
           >
             Start Your Success Story Today
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

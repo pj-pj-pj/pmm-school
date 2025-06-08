@@ -1,20 +1,21 @@
 "use client";
 
 import { CheckCircle, X } from "lucide-react";
+import AnimatedSection from "./animated-section";
 
 export default function ProblemSolution() {
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <AnimatedSection className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">
             Feeling <span className="bg-purple-200 px-1">stuck</span> in your
             PMM Journey?
           </h2>
-        </div>
+        </AnimatedSection>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div>
+          <AnimatedSection>
             <h3 className="text-xl font-semibold text-gray-900 mb-6">
               Does <span className="text-red-400">this</span> sound like you?
             </h3>
@@ -33,9 +34,9 @@ export default function ProblemSolution() {
                 </div>
               ))}
             </div>
-          </div>
+          </AnimatedSection>
 
-          <div>
+          <AnimatedSection>
             <h3 className="text-xl font-semibold text-gray-900 mb-6">
               There's a <span className="text-green-600">better</span> way:
             </h3>
@@ -54,7 +55,7 @@ export default function ProblemSolution() {
                 </div>
               ))}
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { CheckCircle, X, ArrowRight } from "lucide-react";
+import AnimatedSection from "./animated-section";
 
 const handleClick = () => {
   window.open("https://whop.com/checkout/plan_N33HzUKtBVsCn/", "_blank");
@@ -74,8 +75,8 @@ export default function Pricing() {
           </div>
 
           {/* Right Card - Actual Price */}
-          <div className="bg-white p-8 rounded-sm shadow-md border-2 border-gray-300">
-            <div className="text-center mb-8">
+          <AnimatedSection className="hover:scale-[101%] transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] bg-white p-8 rounded-sm shadow-md border-2 border-gray-300">
+            <AnimatedSection className="text-center mb-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 So instead you'll just pay:
               </h3>
@@ -85,9 +86,9 @@ export default function Pricing() {
                   (lifetime access)
                 </span>
               </div>
-            </div>
+            </AnimatedSection>
 
-            <div className="space-y-4 mb-8 md:mb-12 mt-10">
+            <AnimatedSection className="space-y-4 mb-8 md:mb-12 mt-10">
               {features.map((feature, index) => (
                 <div
                   key={index}
@@ -102,11 +103,11 @@ export default function Pricing() {
                   />
                 </div>
               ))}
-            </div>
+            </AnimatedSection>
 
             <Button
               onClick={handleClick}
-              className="cursor-pointer w-full bg-indigo-600 hover:bg-indigo-700 text-white py-6 text-base font-semibold rounded-xs"
+              className="cursor-pointer w-full bg-indigo-600 hover:bg-indigo-800 hover:text-gray-300 text-white py-6 text-base font-semibold rounded-xs "
             >
               Start My PMM Journey
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -117,7 +118,7 @@ export default function Pricing() {
               <span className="font-semibold text-indigo-600">MARKETREADY</span>{" "}
               for $100 off
             </p>
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </section>
