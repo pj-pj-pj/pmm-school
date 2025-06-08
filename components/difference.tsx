@@ -1,6 +1,7 @@
 "use client";
 
 import { CheckCircle } from "lucide-react";
+import AnimatedSection from "./animated-section";
 
 export default function PMMSchoolDifference() {
   const features = [
@@ -44,7 +45,7 @@ export default function PMMSchoolDifference() {
 
         <div className="border-t border-gray-300 pt-4 mb-6 lg:mb-10"></div>
 
-        <div className="space-y-6 mx-auto max-w-xl">
+        <AnimatedSection className="space-y-6 mx-auto max-w-xl">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -59,7 +60,7 @@ export default function PMMSchoolDifference() {
               </div>
             </div>
           ))}
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

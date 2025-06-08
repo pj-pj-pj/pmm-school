@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import AnimatedSection from "./animated-section";
 
 export default function Testimonials() {
   const testimonials = [
@@ -34,7 +35,7 @@ export default function Testimonials() {
 
   return (
     <section
-      id="student-wins"
+      id="testimonials"
       className="py-16 md:py-24 bg-gray-50"
     >
       <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,11 +46,11 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+        <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="shadow-lg rounded-sm h-full flex flex-col border border-violet-300"
+              className="hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] shadow-lg rounded-sm h-full flex flex-col border border-violet-300"
             >
               <CardContent className="flex flex-col h-full">
                 <div className="flex flex-col h-full">
@@ -79,7 +80,7 @@ export default function Testimonials() {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

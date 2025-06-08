@@ -4,6 +4,7 @@ import Masonry from "react-masonry-css";
 import ReactPlayer from "react-player/youtube";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import AnimatedSection from "./animated-section";
 
 export default function TestimonialGrid({
   testimonials,
@@ -31,7 +32,7 @@ export default function TestimonialGrid({
       {testimonials.map((testimonial, index) => (
         <div
           key={index}
-          className={`bg-white border-2 border-gray-600 rounded-lg shadow-[-7px_7px_0px_0px_rgba(147,_51,_234,_0.5)]`}
+          className={`bg-white border-2 border-gray-600 rounded-lg shadow-[-7px_7px_0px_0px_rgba(147,_51,_234,_0.5)] hover:scale-[103%] transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]`}
         >
           {testimonial.videoUrl ? (
             <div className="relative w-full pb-[56.25%] rounded-md overflow-hidden">

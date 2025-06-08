@@ -2,6 +2,7 @@
 
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import AnimatedSection from "./animated-section";
 
 export default function BonusSection() {
   return (
@@ -25,7 +26,7 @@ export default function BonusSection() {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <AnimatedSection className="space-y-4">
               {[
                 "<b>Complimentary 1:1 Coaching Call</b> – Receive direct, personalized feedback on your resume, interview prep, or career strategy.",
                 "<b>Exclusive Videos & Insights</b> – Access premium content not available anywhere else, including in-depth case studies and insider career tips.",
@@ -43,12 +44,12 @@ export default function BonusSection() {
                   />
                 </div>
               ))}
-            </div>
+            </AnimatedSection>
           </div>
 
           <div className="relative px-4 md:ml-7 md:my-auto">
             <div className="hidden lg:inline absolute inset-0 w-[85%] md:bg-green-100 rounded-br-4xl ml-auto mt-auto"></div>
-            <div className="relative overflow-hidden lg:-ml-22 lg:pt-34 mx-auto">
+            <AnimatedSection className="hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] relative overflow-hidden lg:-ml-22 lg:pt-34 mx-auto">
               <Image
                 src="/WebsiteAssets/CurriculumModules/Bonus.png"
                 alt="Bonus Content"
@@ -56,7 +57,7 @@ export default function BonusSection() {
                 height={300}
                 className="lg:w-full h-54 lg:h-auto object-cover lg:object-cover mx-auto"
               />
-            </div>
+            </AnimatedSection>
           </div>
         </div>
       </div>

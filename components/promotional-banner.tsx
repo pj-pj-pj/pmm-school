@@ -23,7 +23,7 @@ export default function PromotionalBanner() {
         </div>
         <Button
           size="sm"
-          className="cursor-pointer bg-blue-600 text-white-500 rounded-xs border-2 border-blue-600 hover:bg-gray-700 hover:text-blue-500 text-xs md:text-sm font-medium px-3 py-2"
+          className="cursor-pointer hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] bg-blue-600 text-white-500 rounded-xs border-2 border-blue-600 hover:bg-gray-700 hover:text-blue-500 text-xs md:text-sm font-medium px-3 py-2"
           onClick={handleClick}
         >
           Start My PMM Journey

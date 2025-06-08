@@ -11,7 +11,7 @@ export default function Navigation() {
     { name: "What You'll Learn", href: "what-youll-learn" },
     { name: "Why PMM School", href: "why-pmm-school" },
     { name: "Pricing", href: "pricing" },
-    { name: "Student Wins", href: "student-wins" },
+    { name: "Testimonials", href: "testimonials" },
     { name: "FAQ", href: "faq" },
     { name: "About", href: "about" },
   ];
@@ -28,16 +28,21 @@ export default function Navigation() {
     <nav className="bg-white border-b border-gray-200">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14">
-          <div className="font-bold text-lg text-gray-900">PMM School</div>
+          <a
+            href="#home"
+            className="font-bold text-lg text-gray-900 hover:text-violet-700 hover:scale-105 transition-transform duration-300 ease-[cubic-bezier(0.25,0.1,0.25,1)]"
+          >
+            PMM School
+          </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item, index) => (
               <a
                 key={index}
                 href={`#${item.href}`}
                 onClick={() => handleNavClick(item.href)}
-                className="text-sm text-gray-800 hover:text-purple-500 transition-colors font-['Poppins']"
+                className="text-sm text-gray-800 hover:text-purple-500 hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:bg-gray-100 p-4"
               >
                 {item.name}
               </a>
@@ -69,7 +74,7 @@ export default function Navigation() {
                 key={index}
                 href={`#${item.href}`}
                 onClick={() => handleNavClick(item.href)}
-                className="block py-2 px-4 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-500 rounded-sm font-['Poppins']"
+                className="block py-2 px-4 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-500 rounded-sm "
               >
                 {item.name}
               </a>

@@ -1,5 +1,6 @@
 "use client";
 
+import AnimatedSection from "./animated-section";
 import { Card, CardContent } from "./ui/card";
 
 export default function HowIHelp() {
@@ -43,11 +44,11 @@ export default function HowIHelp() {
       className="py-16 md:py-24 bg-white"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
+        <AnimatedSection className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900">
             Here's how I can help:
           </h2>
-        </div>
+        </AnimatedSection>
 
         <div className="border-t border-gray-200 pt-4 mb-6"></div>
 
@@ -59,15 +60,15 @@ export default function HowIHelp() {
           </p>
         </div>
 
-        <div className="mx-auto space-y-7">
+        <AnimatedSection className="mx-auto space-y-7">
           <div className="flex flex-col md:flex-row gap-8 md:gap-3 justify-between">
             {steps.map((step, index) => (
               <Card
                 key={index}
-                className="bg-white border border-purple-300 shadow-sm flex-1 relative pt-6 pb-8" // Added relative
+                className="bg-white border border-purple-300 shadow-sm flex-1 relative pt-6 pb-8 hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]"
               >
                 <CardContent className="px-6 pb-4 flex flex-col h-full">
-                  <div className="flex-grow mb-6">
+                  <AnimatedSection className="flex-grow mb-6">
                     {" "}
                     <div className="flex items-center">
                       <div className="bg-white shadow-xs border border-purple-100 rounded-md p-2 text-2xl flex items-center justify-center text-slate-700 font-semibold">
@@ -80,17 +81,17 @@ export default function HowIHelp() {
                     <p className="text-base text-slate-800">
                       {step.description}
                     </p>
-                  </div>
-                  <div
+                  </AnimatedSection>
+                  <AnimatedSection
                     className={`${step.color} z-40 mt-auto ml-auto -mb-16 mr-2 text-gray-800 w-10 h-10 rounded-md flex items-center justify-center font-bold text-lg shadow-sm border border-purple-300`}
                   >
                     {step.number}
-                  </div>
+                  </AnimatedSection>
                 </CardContent>
               </Card>
             ))}
           </div>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );

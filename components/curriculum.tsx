@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import AnimatedSection from "./animated-section";
 
 const handleClick = () => {
   window.open(
@@ -64,14 +65,14 @@ export default function Curriculum() {
             onClick={handleClick}
             variant="outline"
             size={"sm"}
-            className="cursor-pointer border-violet-400 text-violet-500 hover:bg-violet-50 text-sm py-4 rounded-xs"
+            className="hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] cursor-pointer border-violet-400 text-violet-500 hover:text-violet-500 hover:bg-violet-200 text-sm py-4 rounded-xs"
           >
             View Full Syllabus
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
 
-        <div className="space-y-16 lg:space-y-24">
+        <AnimatedSection className="space-y-16 lg:space-y-24">
           {modules.map((item, index) => (
             <div
               key={index}
@@ -113,7 +114,7 @@ export default function Curriculum() {
                   index % 2 === 1 ? "lg:col-start-1" : ""
                 }`}
               >
-                <div className="relative">
+                <div className="relative hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]">
                   {/* Half Background */}
                   <div
                     className={`absolute inset-0 rounded-xs rounded-br-2xl ${
@@ -131,7 +132,7 @@ export default function Curriculum() {
                   ></div>
 
                   {/* Image */}
-                  <div className="relative z-10 overflow-hidden rounded-xs flex items-center justify-center my-auto">
+                  <div className="relative z-10 overflow-hidden rounded-xs flex items-center justify-center my-auto ">
                     <Image
                       src={item.image}
                       alt={`${item.title} illustration`}
@@ -144,7 +145,7 @@ export default function Curriculum() {
               </div>
             </div>
           ))}
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );
