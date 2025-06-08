@@ -46,7 +46,7 @@ export default function HeroSection() {
               <Button
                 onClick={handleClick}
                 size={"default"}
-                className="text-base cursor-pointer bg-violet-500 hover:bg-violet-600 hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] text-white py-5 rounded-xs"
+                className="text-base cursor-pointer hover:scale-[101%] hover:brightness-150 hover:text-gray-400 bg-violet-500 hover:bg-violet-900 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] text-white py-5 rounded-xs"
               >
                 Start Today
                 <ArrowRight className="ml-2 h-4 w-4" />

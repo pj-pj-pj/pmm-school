@@ -39,7 +39,7 @@ export default function CareerInvestmentSection() {
         <AnimatedSection className="text-center mt-12 lg:mt-16">
           <Button
             onClick={handleClick}
-            className="hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] cursor-pointer bg-violet-500 hover:bg-violet-600 text-white py-5 text-sm font-medium rounded-xs"
+            className="hover:scale-[102%] hover:text-gray-400 hover:brightness-125 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] cursor-pointer bg-violet-500 hover:bg-violet-600 text-white py-5 text-sm font-medium rounded-xs"
           >
             Start Your Success Story Today
             <ArrowRight className="ml-2 h-4 w-4" />

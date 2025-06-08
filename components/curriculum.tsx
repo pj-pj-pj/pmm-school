@@ -65,7 +65,7 @@ export default function Curriculum() {
             onClick={handleClick}
             variant="outline"
             size={"sm"}
-            className="hover:scale-105 transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)] cursor-pointer border-violet-400 text-violet-500 hover:text-violet-500 hover:bg-violet-200 text-sm py-4 rounded-xs"
+            className="hover:scale-[102%] transition-transform duration-200 hover:brightness-90 ease-[cubic-bezier(0.25,0.1,0.25,1)] cursor-pointer border-violet-400 text-violet-500 hover:text-violet-500 hover:bg-violet-200 text-sm py-4 rounded-xs"
           >
             View Full Syllabus
             <ArrowRight className="ml-2 h-4 w-4" />

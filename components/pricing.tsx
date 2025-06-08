@@ -107,7 +107,7 @@ export default function Pricing() {
 
             <Button
               onClick={handleClick}
-              className="cursor-pointer w-full bg-indigo-600 hover:bg-indigo-800 hover:text-gray-300 text-white py-6 text-base font-semibold rounded-xs "
+              className="cursor-pointer w-full hover:brightness-200 hover:scale-[101%] bg-indigo-600 hover:bg-indigo-900 hover:text-gray-500 text-white py-6 text-base font-semibold rounded-xs transition-all duration-200"
             >
               Start My PMM Journey
               <ArrowRight className="ml-2 h-4 w-4" />
